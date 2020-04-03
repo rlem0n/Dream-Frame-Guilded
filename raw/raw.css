@@ -46,8 +46,9 @@ body {
 .LayeredPageContent-content {
     background: transparent;
 }
+
 /* Chat Header */
-.ScreenHeader-container {
+.ScreenHeader-container, .ChannelWrapper-container, .ChannelWrapper-container {
     background: transparent;
     border-bottom: none;
 }
@@ -112,6 +113,20 @@ body {
     color: white;
 }
 /*** Chat ***/
+/** Media **/
+/* Grid */
+.MediaDisplayItemV3-container {
+    background-color: rgba(50, 52, 61, 0.5);
+    backdrop-filter: blur(10px);
+}
+.ProgressiveLoadedImage-container-cover img {
+    object-fit: cover;
+    border-radius: 7px;
+    border: none;
+}
+.MediaDisplayItemV3Contents-container::after {
+    display: none;
+}
 /** Annoucements **/
 /* Background */
 .OverviewWidgetItemWrapper-container-type-filled {
@@ -272,7 +287,10 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     width: 60vw;
 }
 .ModalV2-container {
-    border-radius: 8px;
+    border-radius: 7px;
+}
+.OnboardingExperience-background {
+    border-radius: 7px;
 }
 /** Sidebar **/
 /* Save Controls */

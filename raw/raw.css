@@ -1,5 +1,5 @@
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.01";
+    content: "Dream Frame v0.02";
     color: white;
     font-weight: bold;
     position: absolute;
@@ -73,6 +73,12 @@ body {
 .GroupSelector-container {
     background-color: transparent;
 }
+.GroupSelectorItem-container-base-group {
+    box-shadow: none;
+}
+.DraggableHandle-container.GroupSelectorItem-container.GroupSelectorItem-container-base-group {
+    height: 66px;
+}
 
 /*** Channels Sidebar ***/
 /** Messages **/
@@ -87,7 +93,6 @@ body {
     border: none;
     padding: 4px 4px;
 }
-
 /** Header **/
 /* Header */
 .PageNavHeaderWrapper-container.TeamNavHeader-container.TeamPageNavV3-header {
@@ -113,6 +118,32 @@ body {
     color: white;
 }
 /*** Chat ***/
+/** Members **/
+/* List */
+.ItemManagerListItem-container:not(:last-child), .ItemManagerHeader-container {
+    border-bottom: none;
+}
+.ItemManagerListItem-container-selectable.ItemManagerListItem-container-options-active:after, .ItemManagerListItem-container-selectable:hover:after {
+    opacity: 1;
+}
+.ItemManagerListItem-container-selectable:after {
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(50, 52, 61, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+/* Header */
+.SelectToggleIcon-container.SelectToggleIcon-container-clickable.ItemManagerHeader-select-toggle {
+    border-radius: 50px;
+    border: 2px white solid;
+}
+.SearchBarInput-container-bordered {
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(50, 52, 61, 0.5);
+    backdrop-filter: blur(10px);
+}
 /** Media **/
 /* Grid */
 .MediaDisplayItemV3-container {
@@ -139,6 +170,16 @@ body {
     border-radius: 7px;
     backdrop-filter: blur(10px);
 }
+.DraftInputWithTitleV2-container-desktop.DraftInputWithTitleV2-container-unexpanded {
+    backdrop-filter: blur(10px);
+}
+/* Upcoming Events and Latest Annoucements */
+.TeamOverviewContentItemCard-container {
+    border-radius: 7px;
+    background-color: rgba(51, 52, 61, 0.50);
+    backdrop-filter: blur(10px);
+}
+
 /* Borders */
 .ContentMetadataCreationInfo-container.PostMetadata-creation-info, .ContentMetadataReplyInfo-container.ContentMetadataReplyInfo-container-can-reply.PostMetadata-reply-info {
     border: none;
@@ -173,6 +214,22 @@ body {
     border: none;
 }
 /** Overview **/
+/* About */
+.OverviewWidgetItemWrapper-container.OverviewWidgetItemWrapper-container-clickable.OverviewWidgetItem-container.OverviewWidgetItem-container-icon-alignment-left.SocialLinkWidgetItem-container.SocialLinkWidgetItem-container-desktop {
+    border-radius: 7px;
+}
+/* Leadboards */
+.GameContext-container.TeamOverviewLeaderboardItem-leaderboard-container.TeamOverviewLeaderboardSection-leaderboard-container {
+    background-color: rgba(50, 52, 61, 0.5);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+/* Pinned */
+a.TeamPostRow-container.TeamPostRow-container-desktop.PinnedAnnouncement-container.PinnedAnnouncements-announcement {
+    background-color: rgba(50, 52, 61, 0.5);
+    border-radius: 7px;
+}
+
 /* Gradinet Dropdown */
 .GradientBackground-container {
     background: none;
@@ -287,10 +344,19 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     width: 60vw;
 }
 .ModalV2-container {
+    background-color: transparent;
+}
+/** Sidebar and Right Panel **/
+.ModalV2-container, .OnboardingExperience-background {
     border-radius: 7px;
 }
-.OnboardingExperience-background {
-    border-radius: 7px;
+.OptionsMenuPageWrapper-container {
+    border-radius: 0px 7px 7px 0px;
+}
+.OptionsMenu-container-desktop .OptionsMenu-options-control {
+    background-color: rgba(25, 27, 31, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 7px 0px 0px 7px;
 }
 /** Sidebar **/
 /* Save Controls */

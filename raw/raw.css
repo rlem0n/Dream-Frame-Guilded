@@ -1,5 +1,5 @@
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.02";
+    content: "Dream Frame v0.03";
     color: white;
     font-weight: bold;
     position: absolute;
@@ -79,7 +79,6 @@ body {
 .DraggableHandle-container.GroupSelectorItem-container.GroupSelectorItem-container-base-group {
     height: 66px;
 }
-
 /*** Channels Sidebar ***/
 /** Messages **/
 /* Background */
@@ -95,6 +94,9 @@ body {
 }
 /** Header **/
 /* Header */
+.TeamPageNavV3-header {
+    box-shadow: none;
+}
 .PageNavHeaderWrapper-container.TeamNavHeader-container.TeamPageNavV3-header {
     margin-top: 10px;
 }
@@ -118,6 +120,23 @@ body {
     color: white;
 }
 /*** Chat ***/
+/** Text Channel **/
+/** Code Blocks **/
+/* Background */
+.CodeContainerRenderer-container {
+    background-color: rgba(41, 43, 50, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 7px !important;
+}
+.CodeLineRenderer {
+    background-color: transparent;
+}
+/* Code Language */
+.CalloutBadge-container {
+    padding: 0 10px;
+    border-radius: 50px;
+}
+/** Images **/
 /** Members **/
 /* List */
 .ItemManagerListItem-container:not(:last-child), .ItemManagerHeader-container {
@@ -157,6 +176,55 @@ body {
 }
 .MediaDisplayItemV3Contents-container::after {
     display: none;
+}
+/** Docs **/
+/* Background */
+.DocDisplayItem-container {
+    background-color: rgba(60, 62, 72, 0.50);
+    -webkit-user-select: none;
+    border-radius: 7px;
+    box-shadow: none;
+    backdrop-filter: blur(10px);
+}
+.DocDisplayItem-container::after {
+    display: none;
+}
+.DocSummaryInfo-container {
+    background-color: rgba(50, 52, 61, 0.5);
+    border-radius: 0px 0px 7px 7px;
+}
+/** Calendar **/
+/* Background */
+.FullSizedCalendar-week {
+    border: none;
+    background-color: rgba(50, 52, 61, 0.75);
+    backdrop-filter: blur(10px);
+}
+.UpcomingCalendarDay-container {
+    border: none;
+    background-color: rgba(50, 52, 61, 0.75);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.UpcomingCalendar-container {
+    position: relative;
+    border-radius: 1px;
+    background-color: transparent;
+    width: 100%;
+}
+/* Borders */
+.FullSizedCalendar-day {
+    border-right: none;
+}
+.FullSizedCalendar-week {
+    border: none;
+}
+/* Events */
+.FullSizedCalendarEvent-details {
+    border-radius: 7px;
+    width: 97%;
+    margin-left: 4px;
 }
 /** Annoucements **/
 /* Background */
@@ -257,7 +325,6 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     border: none;
     width: 100%;
 }
-
 /* Background */
 .ChatChannelInput-container .ChatChannelInput-editor {
     background: rgba(163,163,172,0.2);
@@ -411,4 +478,57 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 .PublishedPostPage-share-wrapper {
     border-top: none;
     padding-top: 0px;
+}
+/*** Pop Ups and Modals ***/
+/** Set Your Status **/
+/* Background */
+.ModalV2-container.ModalV2-container-has-header, .ModalHeaderV2-container {
+    background: rgba(55, 57, 67, 0.90);
+}
+/* Borders */
+.UserStatusOverlay-container .UserStatusMessageExipreDisplay-container, .ModalV2-container-has-header .ModalV2-modal-content, .ModalFooter-container {
+    border-top: none;
+}
+/** Pinned Messages **/
+/* Background */
+.ChannelPinnedMessages-container {
+    background: rgba(78, 80, 92, 0.75);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    border: none;
+}
+/* Heading */
+.ChannelPinnedMessages-header {
+    color: white;
+}
+/* Messages */
+.ChatV2PinnedMessage-message-wrapper {
+    border-radius: 7px;
+    background: rgba(41,43,50,0.5);
+}
+/** Profile **/
+/* Background */
+.ProfileHoverCardV2Overlay-container {
+    background: transparent;
+}
+/* Network IDs */
+.ProfileHoverCardV2Overlay-info-item:not(:first-child) {
+    border-top: none;
+}
+.UserAliasesListDisplayItem-icon, .TeamMemberRolesDisplay-header {
+    fill: white;
+}
+/* Footer */
+.ProfileCardMenuItem-container:not(:first-child):before {
+    display: none;
+}
+/** Tooltip **/
+/* Background */
+.HoverContextTooltip-text-wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+}
+/* Arrow */
+.HoverContextTooltip-arrow {
+    display: none;
 }

@@ -12,6 +12,6 @@ Dream Frame for Guilded is currently in alpha stages, so there are tons of missi
 ## Web Version
 It's currently possible to install themes in Guilded via browser. If you're using Guilded in a web browser, please install the [Styish](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) extension and create a new style. Add [this](https://raw.githubusercontent.com/dream-frame/Dream-Frame-Guilded/master/Download/DreamFrame.css) to the code and make the domain is starting with `https://www.guilded.gg/`. Click save and the theme should be applied
 ## Windows
-TBA
+Try using [Forge](https://github.com/ForgeMod/ForgeMod-Guilded), which is currently in early release as well.
 ## OSX
-TBA
+Try using [Forge](https://github.com/ForgeMod/ForgeMod-Guilded), which is currently in early release as well.

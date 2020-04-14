@@ -1,11 +1,28 @@
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.03";
+    content: "Dream Frame v0.04";
     color: white;
     font-weight: bold;
     position: absolute;
     bottom: 20px;
 }
 
+/** Scrollbars **/
+/* Chat */
+.TeamPageContent-content::-webkit-scrollbar-thumb {
+    background: white !important;
+}
+/* Members List */
+.PageSidebarWrapper-tab:hover::-webkit-scrollbar-thumb {
+    background: white !important;
+}
+/* Channels List */
+.TeamNavMenu-wrapper:hover::-webkit-scrollbar-thumb {
+    background: white !important;
+}
+/* Settings */
+.OptionsMenu-option-content::-webkit-scrollbar-thumb {
+    background: white !important;
+}
 /** Context Menu **/
 /* Background */
 .TransientMenu-container-style-default {
@@ -106,12 +123,16 @@ body {
     -webkit-mask-image: none !important;
 }
 /** Channels **/
+/* Selected Channel */
+.TeamChannelItemContents-container-selected {
+    border-radius: 7px;
+}
 /* Unread Channels */
 .TeamChannelItemContents-container-unread:before {
     width: 275px;
     height: 32px;
     top: 1px;
-    border-radius: 4px;
+    border-radius: 7px;
     background-color: rgba(245, 196, 0, 0.25);
     left: 0px;
 }
@@ -397,6 +418,7 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     border-radius: 0px 0px 7px 7px;
     border: none;
 }
+
 .HoverContext-container.ReactionPickerNavbarItem {
     transform: rotate(-90deg);
 }
@@ -406,6 +428,23 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     border-right: 3px solid #f5c400;
 }
 /*** Settings ***/
+.Form-container-section-border .Form-section:not(:first-child), .Form-container-section-border-unpadded .Form-section:not(:first-child), .Form-container-row-border .Form-section:not(:first-child) {
+    border-top: none;
+}
+.GuildedTableHeader-container {
+    border-bottom: none;
+}
+.FormSection-row-border-unpadded:not(:first-child) {
+    border-top: none;
+}
+.RadioOptionPanel-container {
+    border-radius: 7px;
+    border: none;
+    background: rgba(60, 62, 72, 0.9);
+}
+.CopyableTextbox-container.CopyableTextbox-container-desktop.CopyableTextbox-container-form.CopyableTextbox-container-type-embed {
+    border-radius: 7px;
+}
 .ModalV2-container-fullscreen {
     height: 70vh;
     width: 60vw;
@@ -413,12 +452,22 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 .ModalV2-container {
     background-color: transparent;
 }
-/** Sidebar and Right Panel **/
-.ModalV2-container, .OnboardingExperience-background {
-    border-radius: 7px;
+.StatusContext-container.OptionsMenu-option-content {
+    background: #36363f;
+    border-radius: 0px 7px 7px 0px;
+    backdrop-filter: blur(10px);
 }
 .OptionsMenuPageWrapper-container {
     border-radius: 0px 7px 7px 0px;
+    background: transparent;
+}
+/* Backdrop */
+.ModalWrapper-container {
+    backdrop-filter: blur(10px);
+}
+/** Sidebar and Right Panel **/
+.ModalV2-container, .OnboardingExperience-background {
+    border-radius: 7px;
 }
 .OptionsMenu-container-desktop .OptionsMenu-options-control {
     background-color: rgba(25, 27, 31, 0.75);

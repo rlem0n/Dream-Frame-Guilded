@@ -1,5 +1,5 @@
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.04";
+    content: "Dream Frame v0.10";
     color: white;
     font-weight: bold;
     position: absolute;
@@ -96,6 +96,56 @@ body {
 .DraggableHandle-container.GroupSelectorItem-container.GroupSelectorItem-container-base-group {
     height: 66px;
 }
+/*** Home ***/
+/** Sidebar **/
+/** Direct Messages **/
+/* Sidebar */
+.ChatChannelList-container {
+    background: transparent !important;
+}
+.ChatChannelListItem-container-selected {
+    background: rgba(64, 67, 78, 0.5);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+/** Matchmaking **/
+.StretchBackground-container.StretchBackground-container-default.StretchFadeBackground-stretch-bg {
+    display: none;
+}
+/* Featured Matches */
+.StretchBackground-container.StretchBackground-container-quarter-right.StretchFadeBackground-stretch-bg {
+    display: none;
+}
+/* Season Leaderboard */
+.TextInputWithLabel-container.TextInputWithLabel-container-desktop.TextInputWithLabel-container-label-retracted.TextInputWithLabel-container-dropdown.TypeaheadInput-input {
+    border-radius: 7px;
+}
+.Select-control {
+    border-radius: 7px !important;
+}
+.ScrimFinderLeaderboardTeam-container::after {
+    background: transparent;
+}
+.TypeaheadMenu-container {
+    background: rgba(79, 81, 93, 0.75) !important;
+    border-radius: 7px;
+    border: none !important;
+    backdrop-filter: blur(10px);
+}
+.SelectMenuItem-container.SelectMenuItem-container-selected.SelectMenuItem-container-desktop.SelectMenuItem-container-size-md {
+    border-radius: 7px;
+}
+/** Find a Server **/
+.IconNavMenu-nav {
+    border-bottom: none;
+}
+/** Explore Players **/
+/* Cards */
+.PlayerCard-container {
+    background: rgba(79, 81, 93, 0.75) !important;
+    backdrop-filter: blur(10px);
+}
+
 /*** Channels Sidebar ***/
 /** Messages **/
 /* Background */
@@ -140,8 +190,33 @@ body {
 .TeamNavSectionItem-name, .TeamChannelItemContents-name, .ChannelIcon-icon-primary, .ChannelListHeader-container-type-category .ChannelListHeader-text, .ChannelListHeader-container-type-default .ChannelListHeader-text { /* Changing font to white */
     color: white;
 }
+.ChannelIcon-icon-primary, .ChannelIcon-icon-secondary {
+    fill: white;
+}
 /*** Chat ***/
-/** Text Channel **/
+/** Messages **/
+.ChatV2Message-container-active {
+    background-color: rgba(41, 43, 50, 0);
+}
+/* Dividers */
+.ChatV2Message-container-type-system:not(.ChatV2Message-container-same-next-type):not(.ChatV2Message-container-last-message):not(.ChatV2Message-container-last-message-for-day):after {
+    display: none;
+}
+/* Dates and New Messages Dividers */
+.WordDividerLine-line {
+    display: none;
+}
+.WordDividerLine-container {
+    justify-content: left;
+}
+.WordDividerLine-container-word-style-chat .WordDividerLine-word {
+    line-height: 29px;
+    border-radius: 7px;
+    text-align: left;
+    margin-left: 32px;
+    color: black !important;
+    background: #f5c400;
+}
 /** Code Blocks **/
 /* Background */
 .CodeContainerRenderer-container {
@@ -307,6 +382,10 @@ body {
 .OverviewWidgetItemWrapper-container.OverviewWidgetItemWrapper-container-clickable.OverviewWidgetItem-container.OverviewWidgetItem-container-icon-alignment-left.SocialLinkWidgetItem-container.SocialLinkWidgetItem-container-desktop {
     border-radius: 7px;
 }
+.IconAndLabel-icon, .OverviewWidgetItem-icon {
+    fill: white;
+}
+
 /* Leadboards */
 .GameContext-container.TeamOverviewLeaderboardItem-leaderboard-container.TeamOverviewLeaderboardSection-leaderboard-container {
     background-color: rgba(50, 52, 61, 0.5);
@@ -318,7 +397,6 @@ a.TeamPostRow-container.TeamPostRow-container-desktop.PinnedAnnouncement-contain
     background-color: rgba(50, 52, 61, 0.5);
     border-radius: 7px;
 }
-
 /* Gradinet Dropdown */
 .GradientBackground-container {
     background: none;
@@ -484,6 +562,17 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 .UserProfileV3-container {
     background: transparent;
 }
+/** Teams **/
+/* Backgrounds */
+.CardWrapper-container {
+    background: #494b53b2;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+.CardWrapper-container:not(.CardWrapper-container-highlighted)::after {
+    border: none;
+}
+
 /** Header - Cover Area **/
 /* Cover */
 .UserProfileBackground-container.StretchFadeBackground-container.StretchFadeBackground-container-type-default {
@@ -580,4 +669,8 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 /* Arrow */
 .HoverContextTooltip-arrow {
     display: none;
+}
+/** Media Split Viewer */
+.MediaSplitView-container {
+    display: contents; /* Should help keep it centered */
 }

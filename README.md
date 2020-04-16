@@ -6,7 +6,7 @@ Dream Frame is a transluate designed theme built for Guilded, offering features 
 
 
 ### Work in Progress
-Dream Frame for Guilded is currently in alpha stages, so there are tons of missing stuff.
+Dream Frame for Guilded is currently in beta stages.
 
 # Installation
 ## Web Version

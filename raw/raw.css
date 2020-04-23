@@ -1,5 +1,5 @@
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.10";
+    content: "Dream Frame v0.11";
     color: white;
     font-weight: bold;
     position: absolute;
@@ -98,6 +98,32 @@ body {
 }
 /*** Home ***/
 /** Sidebar **/
+.WebAppSidebar-container.WebAppV2-sidebar {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px) brightness(0.8);
+}
+.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px) brightness(0.8);
+    box-shadow: none;
+}
+.NavV4BadgedItemIcons-container.NavV4Footer-badged-item-icons {
+    background: transparent;
+}
+.NavV4FooterMenuIcon-container.NavV4FooterMenuIcon-container-active.NavV4Footer-menu-icon {
+    background: transparent;
+}
+.NavV4Footer-container-menu-active .NavV4Footer-right {
+    background-color: transparent;
+}
+.NavV4Footer-wrapper {
+    background-color: rgba(144, 144, 144, 0.22) !important;
+    margin: 10px;
+    border-radius: 7px;
+}
+.NavV4FooterMenuIcon-container.NavV4Footer-menu-icon {
+    background: transparent;
+}
 /** Direct Messages **/
 /* Sidebar */
 .ChatChannelList-container {

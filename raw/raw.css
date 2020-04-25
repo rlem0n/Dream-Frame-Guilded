@@ -1,14 +1,20 @@
+:root {
+    -minimal-wav-width: 330px;
+}
+
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.11";
+    content: "Dream Frame v0.12";
     color: white;
     font-weight: bold;
     position: absolute;
     bottom: 20px;
 }
 
+
+
 /** Scrollbars **/
 /* Chat */
-.TeamPageContent-content::-webkit-scrollbar-thumb {
+.ChatChannelMessagesList-container::-webkit-scrollbar-thumb {
     background: white !important;
 }
 /* Members List */
@@ -116,6 +122,9 @@ body {
 .NavV4Footer-container-menu-active .NavV4Footer-right {
     background-color: transparent;
 }
+.NavV4Footer-right {
+    background-color: transparent;
+}
 .NavV4Footer-wrapper {
     background-color: rgba(144, 144, 144, 0.22) !important;
     margin: 10px;
@@ -205,7 +214,7 @@ body {
 }
 /* Unread Channels */
 .TeamChannelItemContents-container-unread:before {
-    width: 275px;
+    width: 258px;
     height: 32px;
     top: 1px;
     border-radius: 7px;
@@ -486,6 +495,19 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     border-radius: 7px;
     backdrop-filter: blur(10px);
 }
+.ChatV2MessageReplyTooltip-content-wrapper {
+    background-color: rgba(50, 52, 61, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    border: none;
+}
+.ChatV2MessageReplyTooltipInput-title-container {
+    margin-bottom: 5px;
+    border-radius: 7px !important;
+}
+.ChatV2MessageReplyTooltip-arrow {
+    display: none;
+}
 /* Thread */
 .LastReplyDisplay-container {
     background: rgba(72, 75, 81, 0.5);
@@ -578,6 +600,7 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
     backdrop-filter: blur(10px);
     border-radius: 7px 0px 0px 7px;
 }
+
 /** Sidebar **/
 /* Save Controls */
 .OptionsMenu-desktop-save-controls {

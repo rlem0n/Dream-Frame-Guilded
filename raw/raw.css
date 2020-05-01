@@ -10,8 +10,6 @@
     bottom: 20px;
 }
 
-
-
 /** Scrollbars **/
 /* Chat */
 .ChatChannelMessagesList-container::-webkit-scrollbar-thumb {
@@ -214,7 +212,7 @@ body {
 }
 /* Unread Channels */
 .TeamChannelItemContents-container-unread:before {
-    width: 258px;
+    width: 278px;
     height: 32px;
     top: 1px;
     border-radius: 7px;
@@ -488,6 +486,12 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 }
 .OpenGraphEmbedImage-container-playable:before, .ProgressiveLoadedImage-container {
     border-radius: 7px;
+}
+.ChatEmbed-container.ChatEmbedsRenderer-embed {
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    background-color: rgba(50, 52, 61, 0.75);
+    border: none;
 }
 /** Achrived Thread **/
 /* Background */

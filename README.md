@@ -1,3 +1,5 @@
+Since Guilded's userbase is still small, I have already lost interests in the platform. 
+
 # Dream Frame Guilded
 <img src="https://i.imgur.com/oenoy3T.png" data-canonical-src="https://i.imgur.com/oenoy3T.png" width="200"/>
 

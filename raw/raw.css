@@ -727,3 +727,61 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 .MediaSplitView-container {
     display: contents; /* Should help keep it centered */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img.UserProfileBackground-image {
+    width: calc(100% - 100px);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+.NavV4SectionSidebar-container, .NavV4FooterGlobalContextDisplay-teams-wrapper, .NavV4Footer-footer-content {
+    background: transparent;
+}
+.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar {
+    opacity: 0;
+    transition: 0.3s opacity;
+}
+.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar:hover {
+    opacity: 1;
+    transition: 0.3s opacity;
+}

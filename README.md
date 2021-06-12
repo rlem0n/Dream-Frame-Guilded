@@ -1,4 +1,4 @@
-Since Guilded's userbase is still small, I have already lost interests in the platform. 
+Thanks to ReGuilded using Dream Frame by default, the Guilded edition of Dream Frame will be returning.
 
 # Dream Frame Guilded
 <img src="https://i.imgur.com/oenoy3T.png" data-canonical-src="https://i.imgur.com/oenoy3T.png" width="200"/>

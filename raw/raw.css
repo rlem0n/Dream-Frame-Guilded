@@ -3,11 +3,14 @@
 }
 
 .OptionsMenu-options-control::before {
-    content: "Dream Frame v0.12";
+    content: "Dream Frame v0.1.3";
+    background: #32343d;
+    padding: 7px 26px;
     color: white;
     font-weight: bold;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
+    border-radius: 4px;
 }
 
 /** Scrollbars **/
@@ -103,7 +106,7 @@ body {
 /*** Home ***/
 /** Sidebar **/
 .WebAppSidebar-container.WebAppV2-sidebar {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px) brightness(0.8);
 }
 .NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar {
@@ -212,8 +215,8 @@ body {
 }
 /* Unread Channels */
 .TeamChannelItemContents-container-unread:before {
-    width: 278px;
-    height: 32px;
+    width: 257px;
+    height: 33px;
     top: 1px;
     border-radius: 7px;
     background-color: rgba(245, 196, 0, 0.25);
@@ -788,4 +791,43 @@ img.UserProfileBackground-image {
 .NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar:hover {
     opacity: 1;
     transition: 0.3s opacity;
+}
+
+
+.StreamChannelDisplay-container {
+    background-color: rgba(30, 32, 37, 0.5);
+    backdrop-filter: blur(20px) brightness(0.6);
+    border-radius: 10px;
+    border: none !important;
+    margin: 10px;
+}
+
+.StreamChannelWindowControl-container.AppWindow-control.StreamChannelWindow-container {
+    background: #0000009e;
+}
+
+.VoiceConnectionDisplayPanelContents-info-wrapper {
+    border: none !important;
+}
+
+.Resizable-container.VoiceChannelDisplay-container.VoiceChannel-display {
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(30, 32, 37, 0.5);
+    backdrop-filter: blur(20px) brightness(0.6);
+}
+
+.ReactionPickerFooter-container {
+    border: none;
+    margin: -10px 0px 10px 10px;
+    border-radius: 7px;
+    width: calc(100% - 20px);
+}
+
+.ChatSummary-container {
+    background: transparent;
+}
+.TeamPlaqueV2-container.TeamPlaqueV2-container-desktop.TeamPageContent-team-plaque {
+    margin-top: 90px;
 }

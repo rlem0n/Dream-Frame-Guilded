@@ -13,6 +13,33 @@
     border-radius: 4px;
 }
 
+
+/* Main Container to fix the issue of transparent nav */
+
+.WebAppV2-container::before,.WebAppV2-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.WebAppV2-container::after {
+    background-image: var(--Background);
+    background-size: cover;
+    background-repeat: var(--BackgroundRepeat);
+    background-position: center;
+    opacity: var(--BackgroundBrightness);
+    filter: blur(var(--BackgroundBlur));
+
+}
+
+.WebAppV2-container::before {
+    background: rgba(0,0,0,0.9);
+}
+
 /** Scrollbars **/
 /* Chat */
 .ChatChannelMessagesList-container::-webkit-scrollbar-thumb {
@@ -187,6 +214,19 @@ body {
 /* Background */
 .ChatV2Message-container:not(.ChatV2Message-container-editing):hover, .ChatV2Message-container.ChatV2Message-container-replying {
     background-color: transparent;
+}
+
+
+/* Some hover on messages would be nice */
+
+.ChatV2Message-container {
+    /* We want some padding tho */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ChatV2Message-container:hover {
+    background-color: rgba(255,255,255,0.15) !important;
 }
 /* Quick Action Bar */
 .QuickActionBar-container {
@@ -732,39 +772,6 @@ img.TeamOverviewBanner-banner.TeamPageBanner-overview-banner {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ProfileHoverCardV2Overlay-action-menu {
     background-color: rgba(41, 43, 50, 0.25);
 }
@@ -783,14 +790,6 @@ img.UserProfileBackground-image {
 }
 .NavV4SectionSidebar-container, .NavV4FooterGlobalContextDisplay-teams-wrapper, .NavV4Footer-footer-content {
     background: transparent;
-}
-.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar {
-    opacity: 0;
-    transition: 0.3s opacity;
-}
-.NavV4Sidebar-container.WebAppV2-minimal-nav-sidebar:hover {
-    opacity: 1;
-    transition: 0.3s opacity;
 }
 
 
